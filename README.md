@@ -1,7 +1,9 @@
-# ask-my-resume: Chat with your Resume using RAG + LangChain
+# Ask My Resume - Streamlit LLM Application
 
 ## 📄 Description
-A mini project that lets you interact with your resume PDF using Retrieval-Augmented Generation (RAG) via LangChain. This is ideal to demonstrate prior experience with LangChain, embeddings, and RAG pipelines — perfect for internships like Prompt Engineering roles.
+A mini project that lets you interact with your resume PDF using Retrieval-Augmented Generation (RAG) via LangChain.
+
+🔗 **Streamlit App:** [https://chaitrasutari-askmyresume.streamlit.app/](https://chaitrasutari-askmyresume.streamlit.app/)
 
 ## 🚀 Features
 - Upload a resume (PDF)
@@ -66,9 +68,28 @@ streamlit run streamlit_app.py
 - What frameworks do I know?
 - Summarize my experience
 
-## 🧰 Future Ideas
-- Job insights comparison
-- Export summaries as PDF/JSON
+## 🚀 Future Scope
+
+- **🕒 Latency Optimization**  
+  Current responses from the LLM introduce noticeable delays, especially for large PDFs or complex questions. To improve user experience:
+  - Integrate asynchronous processing with background task queues (e.g., `Celery`, `FastAPI + async`)
+  - Cache previous responses using Redis or local storage
+  - Switch to faster, quantized models or hosted LLMs like `ollama`, `gpt4all`, or use OpenAI with batching
+
+- **📁 Support for Multiple File Types**  
+  Extend support beyond PDFs to include DOCX, TXT, or HTML files using LangChain-compatible loaders.
+
+- **📦 Local Embeddings & Models**  
+  Reduce dependency on Hugging Face endpoints by serving local models with `Instructor-XL`, `LLaMA`, or `BGE`.
+
+- **📜 Conversational History**  
+  Maintain a chat-like experience with full question-answer history, context retention, and follow-ups.
+
+- **🧠 Semantic Chunking Improvements**  
+  Replace static chunking with smarter approaches like sentence-aware chunking or semantic segmentation for better QA accuracy.
+
+- **🔒 Authentication & User Isolation**  
+  Add user authentication to allow personalized resume uploads, embeddings per user, and private sessions.
 
 ## 💼 Why This Project?
 > Built to demonstrate hands-on RAG experience using LangChain, and HuggingFace Embeddings.

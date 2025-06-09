@@ -1,0 +1,16 @@
+# 🔐 Security
+.env
+.env.*
+
+# 📄 PDF and test files
+*.pdf
+
+# 🐍 Python
+__pycache__/
+*.pyc
+venv/
+.env/
+*.egg-info/
+
+# 🗃️ Streamlit cache
+.streamlit/

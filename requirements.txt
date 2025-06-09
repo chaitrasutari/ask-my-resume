@@ -1,0 +1,9 @@
+streamlit>=1.25
+langchain
+langchain-community
+langchain-huggingface
+sentence-transformers
+faiss-cpu
+huggingface_hub
+python-dotenv
+PyPDF2

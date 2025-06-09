@@ -7,3 +7,4 @@ faiss-cpu
 huggingface_hub
 python-dotenv
 PyPDF2
+pypdf
